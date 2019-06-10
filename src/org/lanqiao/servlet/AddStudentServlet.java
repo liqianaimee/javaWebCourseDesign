@@ -23,6 +23,7 @@ public class AddStudentServlet extends HttpServlet {
         int age =Integer.parseInt(request.getParameter("sage"));
         String address =request.getParameter("saddress");
         Student student=new Student(no,name,age,address);
+
         //将封装好的student对象传到service
         //接口x=new 实现类（）；
         IStudentService studentServiceImpl =new StudentServiceImpl();
